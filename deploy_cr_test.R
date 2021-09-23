@@ -71,7 +71,6 @@ prettify(content(cr_jwt_with_httr(GET(call_url),token)))
 call_url = "https://deploy-test-1-raft3imjaq-ue.a.run.app/call"
 res<- cr_jwt_with_httr(GET(call_url),token)
 results <- fromJSON(unlist(content(res)))
-print(results)
 
 
 ## a function that I used during development....
